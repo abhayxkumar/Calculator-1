@@ -19,11 +19,11 @@ app.post("/index.html",  function(request,respond){
   respond.send("The result of calculation is " + result);
 });
 
-app.get("/bmicalculator", function(request,respond){
+app.get("/bmiCalculator", function(request,respond){
   respond.sendfile(__dirname + "/bmiCalculator.html");
 });
 
-app.post("/bmicalculator", function(request, respond){
+app.post("/bmiCalculator", function(request, respond){
   var weight = parseFloat(request.body.weight);
   var height = parseFloat(request.body.height);
 
